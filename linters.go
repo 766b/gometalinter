@@ -410,4 +410,12 @@ var defaultLinters = map[string]LinterConfig{
 		defaultEnabled:    true,
 		IsFast:            true,
 	},
+	"godox": {
+		Command:           `godox`,
+		Pattern:           `PATH:LINE:COL:MESSAGE`,
+		PartitionStrategy: partitionPathsAsPackages,
+		InstallFrom:       "github.com/766b/godox",
+		defaultEnabled:    false,
+		IsFast:            true,
+	},
 }
